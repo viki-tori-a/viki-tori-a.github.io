@@ -1,0 +1,29 @@
+:root{
+    background-color: black;
+    color: beige;
+    text-align: center;
+}
+
+.menu{
+    background-color: #d664f8;
+    color: beige;
+    position: fixed;
+    text-align: left;
+    width: 20%;
+}
+
+h1{
+    color: #d664f8;
+}
+
+h1,h2,h3{
+    font-family: 'Amarante', monospace;
+}
+p{
+    font-family: 'Cambria';
+}
+
+.link{
+    font-variant: initial;
+    font-family: 'Amarante', monospace;
+}
