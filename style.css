@@ -1,10 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .navigation{
+    background-color: black;
     display: flex;
 }
 .navigation a{
 text-decoration: none;
+color: white;
+display: flex;
 }
 
-nav ul a{
-    list-style-type: none;    
+.navigation ul {
+    list-style-type: none;
+    justify-content: left;
+    display: flex;
 }
+
+
+.navigation ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.navigation ul li a:hover{
+    color:#FAB71D;  /* Default text color */
+    position: relative;  /* So that we can use pseudo-elements for the shine effect */
+    transition: color 0.3s ease;
+}
+
+.slideshow-container {
+     justify-content: center;
+     position: relative;
+    width: 80%;
+    border-radius: 10px;
+    }
+
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .slide {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    
+    .prev {
+        left: 10px;
+    }
+    
+    .next {
+        right: 10px;
+    }
+    
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }

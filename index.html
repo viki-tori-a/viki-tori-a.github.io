@@ -9,15 +9,31 @@
 <body>
   <!--Navigation-->  
   <div class="navigation">
-    <ul><nav>
-        <li><a href="index.html">home</a></li>
+    <ul>
+        <li><a href="index.html">work</a></li>
         <li><a href="about.html">about</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </nav></ul>
+    </ul>
   </div>
+  <!--Überschrift-->
   <div>
     <h1>Viktoria Urban</h1>
     <h2>projects</h2>
   </div>
+  <!--Slideshow-->
+  <div class="slideshow-container">
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    
+    <div class="slides">
+        <a href="climategames.html"><img src="img/1_Haus_Morgen.jpg" alt="1 test" class="slide"></a>
+        <a href="rausgedacht.html"><img src="img/2_Haus_Mittag.jpg"  alt="2test" class="slide"></a>
+        <a href="kochbuch.html"><img src="img/3_Haus_Abend.jpg"  alt="3test" class="slide"></a>
+        <a href="headlines.html"><img src="img/4_Haus_Nacht.jpg"  alt="4test" class="slide"></a>
+        <a href="fotografie.html"><img src="img/4_Haus_Nacht.jpg"  alt="5test" class="slide"></a>
+    </div>
+    
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
