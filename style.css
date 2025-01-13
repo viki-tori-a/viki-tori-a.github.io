@@ -2,15 +2,79 @@ body{
     margin: 0;
     padding: 0;
 }
+/*fonts*/
+/*<uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 100 to 900 */
+
+/* cursor: url(stern) */
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('assets');
+}  
+h1,h2{
+    padding-left: 30px;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+    
+}
+h1{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+h2{ 
+  text-align: center;
+  font-weight: 400;  
+}
+.info p{ 
+    /* <uniquifier>: Use a unique and descriptive class name*/
+    /* <weight>: Use a value from 100 to 900*/
+        font-family: "Reenie Beanie", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 30px;
+        font-size: 30px;
+      
+}     
+p{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+    margin: 20px;
+}   
+
+.bodyindex{
+    background-image: url(img/hintergrundwebsite.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bodyandere{
+    background-image: url(img/hintergrund\ website\ projekte.jpg);
+    background-size: cover;
+}
 
 .navigation{
-    background-color: black;
     display: flex;
+
 }
 .navigation a{
 text-decoration: none;
 color: white;
 display: flex;
+font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .navigation ul {
@@ -26,27 +90,46 @@ display: flex;
 }
 
 .navigation ul li a:hover{
-    color:#FAB71D;  /* Default text color */
+    color:#FF00FF;  /* Default text color */
     position: relative;  /* So that we can use pseudo-elements for the shine effect */
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
-.slideshow-container {
+/*.slideshow-container {
      justify-content: center;
      position: relative;
     width: 80%;
     border-radius: 10px;
-    }
+    }*/
 
+    .slideshow-container {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;  /* Maximale Breite für die Slideshow */
+        margin: auto;
+        overflow: hidden;  /* Verhindert, dass Bilder außerhalb des Containers sichtbar sind */
+        padding-bottom: 50px;
+        }
+
+   
     .slides {
         display: flex;
-        transition: transform 0.5s ease;
-    }
+        transition: transform 0.3s ease-in-out;  /* Sanfte Übergänge beim Wechseln */
+      }
 
     .slide {
-        width: 100%;
+        width: 100%;  /* Jedes Bild nimmt die volle Breite des Containers ein */
+        max-width: 100%;
         height: auto;
-    }
+        display: none; /* Standardmäßig werden alle Bilder ausgeblendet */
+        opacity: 80%;
+      }
+
+
+      /* Sichtbares Bild */
+.slides .active {
+    display: block;  /* Nur das aktive Bild wird angezeigt */
+}
 
     button {
         position: absolute;
@@ -71,5 +154,42 @@ display: flex;
     }
     
     button:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #6DC6D7;
     }
+.gallery{
+    display: flex;
+    align-items: center;
+}
+.gallery img{
+        width: 30%;
+        position: relative;
+        margin: 0;
+
+    }
+.instalink p a{
+    color:#fff;
+}
+.portrait img{
+    width: 20%;
+}
+
+    /* Footer styling */
+.footer {
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    max-width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+.footertext{
+    margin: 0;
+}
+.footertext a{
+    text-decoration:none;
+    color: #fff;
+}

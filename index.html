@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home</title>
     <link href="style.css"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyindex">
   <!--Navigation-->  
   <div class="navigation">
     <ul>
@@ -16,24 +22,30 @@
   </div>
   <!--Überschrift-->
   <div>
-    <h1>Viktoria Urban</h1>
+    <h1>V I K T O R I A URBAN</h1>
     <h2>projects</h2>
   </div>
+  <div class="info"><p>Click here to learn more! &#8600;</p></div>
   <!--Slideshow-->
   <div class="slideshow-container">
     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
     
     <div class="slides">
-        <a href="climategames.html"><img src="img/1_Haus_Morgen.jpg" alt="1 test" class="slide"></a>
-        <a href="rausgedacht.html"><img src="img/2_Haus_Mittag.jpg"  alt="2test" class="slide"></a>
-        <a href="kochbuch.html"><img src="img/3_Haus_Abend.jpg"  alt="3test" class="slide"></a>
-        <a href="headlines.html"><img src="img/4_Haus_Nacht.jpg"  alt="4test" class="slide"></a>
+        <a href="climategames.html"><img src="img/game.jpg" alt="Spielset" class="slide"></a>
+        <a href="rausgedacht.html"><img src="img/_DSC1334_für web.jpg"  alt="Zwei Zines liegen übereinander" class="slide"></a>
+        <a href="kochbuch.html"><img src="img/kochbuch.jpg"  alt="zwei kochbücher" class="slide"></a>
+        <a href="headlines.html"><img src="img/vinyl.jpg"  alt="Vinyl mit Cover" class="slide"></a>
         <a href="fotografie.html"><img src="img/4_Haus_Nacht.jpg"  alt="5test" class="slide"></a>
     </div>
     
     <button class="next" onclick="moveSlide(1)">&#10095;</button>
 </div>
-
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Viktoria Urban. All rights reserved.</p>
+    <p class="footertext"><a href=impressum.html>Impressum</a></p>
+  </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
