@@ -37,3 +37,4 @@ showSlide();
     //const slidesContainer = document.querySelector('.slides');
     //slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
 //}
+

@@ -13,11 +13,21 @@
 <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 </head>
 <body class="bodyindex">
+  <div class="cursor-area">
   <!--Navigation-->  
   <div class="navigation">
     <ul>
-        <li><a href="index.html">work</a></li>
+        <li class="dropdown">
+          <a href="index.html">work</a>
+          <ul class="dropdown-content">
+            <li><a href="climategames.html">Heat Survivors</a></li>
+            <li><a href="rausgedacht.html">Classism at Design Studies</a></li>
+            <li><a href="kochbuch.html">Cook book</a></li>
+            <li><a href="headlines.html">Vinyl-Artworks</a></li>
+          </ul>
+        </li>
         <li><a href="about.html">about</a></li>
+       
     </ul>
   </div>
   <!--Überschrift-->
@@ -31,15 +41,15 @@
     <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
     
     <div class="slides">
-        <a href="climategames.html"><img src="img/game.jpg" alt="Spielset" class="slide"></a>
-        <a href="rausgedacht.html"><img src="img/_DSC1334_für web.jpg"  alt="Zwei Zines liegen übereinander" class="slide"></a>
-        <a href="kochbuch.html"><img src="img/kochbuch.jpg"  alt="zwei kochbücher" class="slide"></a>
-        <a href="headlines.html"><img src="img/vinyl.jpg"  alt="Vinyl mit Cover" class="slide"></a>
-        <a href="fotografie.html"><img src="img/4_Haus_Nacht.jpg"  alt="5test" class="slide"></a>
+        <a href="climategames.html"><img src="img/titelbild_game Kopie-min.jpg" alt="Spielset" class="slide"></a>
+        <a href="rausgedacht.html"><img src="img/titelbild_rausgedacht-min.jpg"  alt="Zwei Zines liegen übereinander" class="slide"></a>
+        <a href="kochbuch.html"><img src="img/titelbild_kochbuch Kopie-min.jpg"  alt="zwei kochbücher" class="slide"></a>
+        <a href="headlines.html"><img src="img/titelbild_vinyl Kopie-min.jpg"  alt="Vinyl mit Cover" class="slide"></a>
     </div>
     
     <button class="next" onclick="moveSlide(1)">&#10095;</button>
 </div>
+<!--Footer-->
 <footer class="footer">
   <div class="footer-content">
     <p>&copy; 2025 Viktoria Urban. All rights reserved.</p>
@@ -47,5 +57,7 @@
   </div>
 </footer>
 <script src="script.js"></script>
+
+</div>
 </body>
 </html>
