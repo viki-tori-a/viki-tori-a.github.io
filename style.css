@@ -23,7 +23,7 @@ a{
     src: url('assets');
 }  
 h1,h2,h3{
-    padding-left: 30px;
+    padding-left: 20px;
     color: #fff;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
@@ -31,19 +31,16 @@ h1,h2,h3{
     font-style: normal;
     
 }
-h1{
-    position: relative;
-    font-size: 40px;
-    text-align: center;
-    font-weight: 600;
-}
+
 h2{ 
-  text-align: center;
+  text-align: left;
   font-weight: 400;  
 }
 h3{
-    text-align: center;
+    text-align: left;
     font-weight: 300;
+    margin: 0;
+    padding:0;
 }
 .info p{ 
     /* <uniquifier>: Use a unique and descriptive class name*/
@@ -75,53 +72,75 @@ p{
     background-image: url(img/hintergrund_website_projekte.jpg);
     background-size: cover;
 }
+/*Navigation*/
 
-.navigation{
+.navigation {
+    list-style-type: none;
     display: flex;
-
+    color: white;
+font-family: "Montserrat", serif;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
 }
+
 .navigation a{
 text-decoration: none;
 color: white;
 display: flex;
 font-family: "Montserrat", serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
+font-optical-sizing: auto;
+font-weight: 100;
+font-style: normal;
 }
 
-.navigation ul {
-    list-style-type: none;
-    justify-content: left;
-    display: flex;
-}
-
-
-.navigation ul li {
+.navigation li {
     display: inline;
-    padding: 20px;
 }
 
-.navigation ul li a:hover{
+.navigation .second{
+    margin-left: 80px;
+}
+
+.navigation .center{
+    margin-left: auto;           /* Das zweite Element nach rechts verschieben */
+    margin-right: center;
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+
+.navigation li:last-child {
+    margin-left: auto; /* Schiebt das letzte Element nach rechts */
+    margin-right: 20px;
+    text-align: right;
+}
+
+.navigation li a:hover{
     color:#FF00FF;  /* Default text color */
     position: relative;  /* So that we can use pseudo-elements for the shine effect */
     transition: color 0.5s ease;
 }
 
-.dropdown{
-    position: relative;
+.navigation .dropdown{
+    position: absolute;
+    margin-right: 50px;
 }
 
-.dropdown-content a{
+.navigation .dropdown .dropdown-content a{
     display: none;
-    /*position: absolute;*/
-    z-index: 1;
+    padding: 10px;
 }
 
-.dropdown:hover .dropdown-content a{
+.navigation .dropdown:hover .dropdown-content a{
     display: inline;
 }
 
+/*Slide-Show*/
 
  .slideshow-container {
         position: relative;
@@ -260,27 +279,31 @@ left: 66%;
 }
 
 .impressum{
-    text-align: center;
+    text-align: left;
 }
 
     /* Footer styling */
 .footer {
     color: #fff;
     text-align: center;
-    padding: 5px;
+    padding: 0;
     max-width: 100%;
     bottom: 0;
     display: relative;
+    margin: 0 auto;
+    
   }
   
   .footer-content {
     max-width: 100%;
     margin: 0 auto;
+    bottom: 0;
   }
 .footertext{
     margin: 0;
+    bottom: 0;
 }
 .footertext a{
-    text-decoration:none;
+    text-decoration: underline;
     color: #fff;
 }
