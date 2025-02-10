@@ -289,7 +289,7 @@ left: 66%;
     padding: 0;
     max-width: 100%;
     bottom: 0;
-    display: relative;
+    display: fixed;
     margin: 0 auto;
     
   }
@@ -298,10 +298,12 @@ left: 66%;
     max-width: 100%;
     margin: 0 auto;
     bottom: 0;
+    display: fixed;
   }
 .footertext{
     margin: 0;
     bottom: 0;
+    display: fixed;
 }
 .footertext a{
     text-decoration: underline;
