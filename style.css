@@ -33,8 +33,9 @@ h1,h2,h3{
 }
 
 h2{ 
-  text-align: left;
-  font-weight: 400;  
+    text-align: left;
+    font-weight: 400;
+    margin-left: 20px; 
 }
 h3{
     text-align: left;
@@ -45,11 +46,12 @@ h3{
 .info p{ 
     /* <uniquifier>: Use a unique and descriptive class name*/
     /* <weight>: Use a value from 100 to 900*/
-        font-family: "Reenie Beanie", serif;
-        font-weight: 400;
-        font-style: normal;
-        margin-top: 30px;
-        font-size: 30px;   
+    font-family: "Reenie Beanie", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;   
 }     
 p{
     font-family: "Montserrat", serif;
@@ -78,20 +80,21 @@ p{
     list-style-type: none;
     display: flex;
     color: white;
-font-family: "Montserrat", serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 10px;
 }
 
 .navigation a{
-text-decoration: none;
-color: white;
-display: flex;
-font-family: "Montserrat", serif;
-font-optical-sizing: auto;
-font-weight: 100;
-font-style: normal;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
 }
 
 .navigation li {
@@ -143,93 +146,112 @@ font-style: normal;
 /*Slide-Show*/
 
  .slideshow-container {
-        position: relative;
-        width: 100%;
-        max-width: 1000px;  /* Maximale Breite für die Slideshow */
-        margin: auto;
-        overflow: hidden;  /* Verhindert, dass Bilder außerhalb des Containers sichtbar sind */
-        padding-bottom: 50px;
-        }
+    position: relative;
+    width: 100%;
+    max-width: 1000px;  /* Maximale Breite für die Slideshow */
+    margin: auto;
+    overflow: hidden;  /* Verhindert, dass Bilder außerhalb des Containers sichtbar sind */
+    padding-bottom: 50px;
+}
 
    
  .slides {
-        display: flex;
-        transition: transform 0.3s ease-in-out;  /* Sanfte Übergänge beim Wechseln */
+    display: flex;
+    transition: transform 0.3s ease-in-out;  /* Sanfte Übergänge beim Wechseln */
 }
 
  .slide {
-        width: 100%;  /* Jedes Bild nimmt die volle Breite des Containers ein */
-        max-width: 100%;
-        height: auto;
-        display: none; /* Standardmäßig werden alle Bilder ausgeblendet */
-        opacity: 80%;
+    width: 100%;  /* Jedes Bild nimmt die volle Breite des Containers ein */
+    max-width: 100%;
+    height: auto;
+    display: none; /* Standardmäßig werden alle Bilder ausgeblendet */
+    opacity: 80%;
  }
 
 
 .slides .active {
-        display: block;  /* Nur das aktive Bild wird angezeigt */
+    display: block;  /* Nur das aktive Bild wird angezeigt */
 }
 
 button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        font-size: 18px;
-        border-radius: 50%;
-        z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 10;
 }
     
 .prev {
-        left: 10px;
+    left: 10px;
 }
     
 .next {
-        right: 10px;
+    right: 10px;
 }
     
 button:hover {
-        background-color: #6DC6D7;
+    background-color: #6DC6D7;
 }
 
+/* Bildergalerie*/
 .container {
     display: grid;
     grid-template: 1fr 1fr 1fr;
     grid-gap: 20px;
-    position: relative;
+    /*position: relative;*/
     margin-left: 20px;
 }
 
 .container img{
     width: 30%;
-    ;
 }
-.container.bild1{
+.container.bild1relative{
     left:0%;
     position: relative;
-    padding-left:20px;
+
+    margin-left:40px;
 }
 
-.container .bild1raus{
+.container .bild1absolute{
+    position: absolute;
+    left: 0%;
+    padding-left:40px;
+}
+.container .bild2relative{
+    left: 33%;
     position: relative;
-    left: 33%;
-}
-.container .bild2{
-    left: 33%;
-    position: absolute;
-}
-.container .bild3{
-position: absolute;
-left: 66%;
 }
 
-.container .info{
+.container .bild2absolute{
+    left: 33%;
     position: absolute;
+}
+
+.container .bild3relative{
+    position: relative;
     left:66%;
+}
+.container .bild3absolute{
+    position: absolute;
+    left: 66%;
+}
+
+.container .infohandmade p{
+    left:66%;
+    position: relative;
+    font-family: "Reenie Beanie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+.container .text{
+    position: relative;
 }
 
 
@@ -262,27 +284,17 @@ left: 66%;
     bottom: 150px;
 }
 
-
-/*.gallery{
-    display: flex;
-    align-items: center;
-}
-.gallery img{
-        width: 30%;
-        position: relative;
-        margin: 0;
-
-    }*/
-
 .portrait img{
     width: 20%;
 }
+
+/*Impressum*/
 
 .impressum{
     text-align: left;
 }
 
-    /* Footer styling */
+/* Footer */
 .footer {
     color: #fff;
     text-align: center;
@@ -290,8 +302,9 @@ left: 66%;
     max-width: 100%;
     bottom: 0;
     display: fixed;
-    margin: 0 auto;
-    
+    margin-bottom: 15px;
+    margin-top: 10px;
+    /*margin-top:100%;*/ 
   }
   
   .footer-content {
