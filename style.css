@@ -356,7 +356,12 @@ button:hover {
         display: list-item;
         list-style: none;
     }
-
+    p{
+        padding-left: 0%;
+    }
+    h2{
+        padding-left: 0%;
+    }
     .container p{
         position:relative;
     }
