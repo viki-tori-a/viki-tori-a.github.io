@@ -37,4 +37,8 @@ showSlide();
     //const slidesContainer = document.querySelector('.slides');
     //slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
 //}
-
+const mobilemenu = document.getElementById ('mobilemenu');
+mobilemenu .addEventListener ('click',()=>{
+    //das wird ausgeführt
+    mobilemenu.classList.toggle("active");
+});

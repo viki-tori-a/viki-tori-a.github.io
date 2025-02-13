@@ -335,8 +335,64 @@ button:hover {
 @media(max-width:1000px){
     .bodyindex{
         background-image: url(img/hintergrund-mobil-index.jpg);
+        background-size: cover;
     }
     .bodyandere{
         background-image: url(img/hintergrund-mobil-projekt.jpg);
+        background-size: cover;
     }
+
+    /*Navigation*/
+    .navigation .dropdown{
+        position: absolute;
+        margin-right: 50px;
+    }
+    .navigation .dropdown .dropdown-content a{
+        display: none;
+        padding: 10px;
+    }
+    .navigation .dropdown:hover .dropdown-content a{
+        background-color: #6DC6D7;
+        display: list-item;
+        list-style: none;
+    }
+
+    .container p{
+        position:relative;
+    }
+    .container img{
+        width: 50%;
+    }
+    .container .bild3absolute{
+        position:relative;
+        left:50%
+    }
+    .container .bild2relative{
+        left:0%;
+    }
+    .container .bild2absolute{
+        position: relative;
+        left: 50%;
+    }
+    .container .bild3relative{
+        position: relative;
+        left: 50%;
+    }
+    .container .infoclimate{
+        display: none;
+    }
+    .container .inforaus{
+        display: none;
+    }
+    .container .infocook{
+        display: none;
+    }
+    .container .infovinyl{
+        display: none;
+    }
+    .container .textneben{
+        position: relative;
+        left:1%;
+    }
+
 }
