@@ -27,7 +27,6 @@ h1,h2,h3{
     color: #fff;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
-    
     font-style: normal;
     
 }
@@ -60,6 +59,7 @@ p{
     font-style: normal;
     color: #fff;
     margin: 20px;
+    padding-left: 20px;
 }   
 
 .bodyindex{
@@ -204,8 +204,6 @@ button:hover {
     display: grid;
     grid-template: 1fr 1fr 1fr;
     grid-gap: 20px;
-    /*position: relative;*/
-    margin-left: 20px;
 }
 
 .container img{
@@ -214,7 +212,6 @@ button:hover {
 .container.bild1relative{
     left:0%;
     position: relative;
-
     margin-left:40px;
 }
 
@@ -242,46 +239,58 @@ button:hover {
     left: 66%;
 }
 
-.container .infohandmade p{
-    left:66%;
-    position: relative;
-    font-family: "Reenie Beanie", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-}
 .container .text{
     position: relative;
 }
-
-
-.container .text-neben{
+.container .textneben{
     position: absolute;
-    left: 33%;
+    left: 33%; 
 }
-.container .text-neben a{
-    color:#fff;
-}
-.container .text-neben a:hover{
-    color:#FF00FF;
-} 
-.inforaus p{
+
+.container .infoclimate{
+    font-family: "Reenie Beanie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
     position: absolute;
     left: 66%;
+    padding-top: 530px;
+}
+
+.container .inforaus{
     font-family: "Reenie Beanie", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 30px;
-    bottom: 20px;
+    text-align: center;
+    position: absolute;
+    left: 66%;
+    padding-top: 320px;
 }
-.infocook p{
+
+
+.container .infocook{
+    font-family: "Reenie Beanie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    left: 66%;
+    padding-top: 500px;
+}
+
+.container .infovinyl{
+    font-family: "Reenie Beanie", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
     position: absolute;
     left: 33%;
-    font-family: "Reenie Beanie", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    bottom: 150px;
+    padding-top: 500px;
+    text-align: right;
 }
 
 .portrait img{
@@ -321,4 +330,13 @@ button:hover {
 .footertext a{
     text-decoration: underline;
     color: #fff;
+}
+
+@media(max-width:1000px){
+    .bodyindex{
+        background-image: url(img/hintergrund-mobil-index.jpg);
+    }
+    .bodyandere{
+        background-image: url(img/hintergrund-mobil-projekt.jpg);
+    }
 }
