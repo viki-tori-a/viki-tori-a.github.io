@@ -335,6 +335,9 @@ button:hover {
 @media(max-width:1000px){
     .bodyindex{
         background-image: url(img/hintergrund-mobil-index.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
     }
     .bodyandere{
@@ -343,6 +346,15 @@ button:hover {
     }
 
     /*Navigation*/
+    .navigation{
+        margin:0%;
+        padding: 0%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .navigation .second{
+        margin-left: 70px;
+    }
     .navigation .dropdown{
         position: absolute;
         margin-right: 50px;
@@ -350,6 +362,7 @@ button:hover {
     .navigation .dropdown .dropdown-content a{
         display: none;
         padding: 10px;
+        text-align: left;
     }
     .navigation .dropdown:hover .dropdown-content a{
         background-color: #6DC6D7;
